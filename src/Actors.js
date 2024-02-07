@@ -28,49 +28,62 @@ const Actors = ({ Actors }) => {
   };
 
   const columnConfig = [
-    { key: "userId", title: "UserId", tooltip: "Account Unique Id" },
+    { key: "firstName", title: "First Name", tooltip: "Actor First Name" },
     {
-      key: "clientId",
-      title: "ClientId",
+      key: "lastName",
+      title: "Last Name",
       tooltip:
-        "Client Id, Linked to Channel/Device/Account, can be changed after ‘New Client’ operation",
+        "Actor Last Name",
     },
     {
-      key: "appInstallationId",
-      title: "AppInstallationId",
-      tooltip: "Edge Channel Unique Id",
+      key: "ratings",
+      title: "Ratings",
+      tooltip: "Average Rating Credits in movies, series etc",
     },
     {
-      key: "channel",
-      title: "Channel",
-      tooltip: "Edge Channel, e.x. Canary, Dev, Beta, Stable",
+      key: "placeOfBirth",
+      title: "Place of Birth",
+      tooltip: "Place of Birth",
     },
     {
-      key: "edgeVersion",
-      title: "EdgeVersion",
-      tooltip: "Edge Client Version",
+      key: "dateOfBirth",
+      title: "Date Of Birth",
+      tooltip: "Date of Birth",
     },
-    { key: "platform", title: "Platform", tooltip: "Edge Installed Device" },
+    { key: "gender", title: "Gender", tooltip: "Gender" },
     {
-      key: "correlationId",
-      title: "CorrelationId",
-      tooltip: "Service Log Unique Id for Operation",
-    },
-    {
-      key: "activityIds",
-      title: "ActivityIds",
-      tooltip: "A list of Entity Id",
+      key: "age",
+      title: "Age",
+      tooltip: "Age",
     },
     {
-      key: "operationType",
-      title: "OperationType",
-      tooltip: "Request Type from Edge Client",
+      key: "biography",
+      title: "Biography",
+      tooltip: "Biography",
     },
     {
-      key: "timestamp",
-      title: "Timestamp",
-      tooltip: "Last Modified Time by Sync Service",
+      key: "featuresIn",
+      title: "Features in ",
+      tooltip: "Movies featured in",
     },
+
+    {
+      key: "productionCredits",
+      title: "Production Credits",
+      tooltip: "Production Credits in movies, series etc",
+    },
+    {
+      key: "crewCredits",
+      title: "Crew  Credits",
+      tooltip: "Crew Credits in movies, series etc",
+    },
+    {
+      key: "writingCredits",
+      title: "Writing Credits",
+      tooltip: "Writing Credits in movies, series etc",
+    },
+
+
   ];
 
   const sortedActors = [...Actors].sort((a, b) => {

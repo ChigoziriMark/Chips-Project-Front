@@ -26,48 +26,58 @@ const Series = ({ Series }) => {
   };
 
   const columnConfig = [
-    { key: "userId", title: "UserId", tooltip: "Account Unique Id" },
+    { key: "title", title: "Title", tooltip: "Series Title" },
     {
-      key: "clientId",
-      title: "ClientId",
+      key: "genre",
+      title: "Genre",
       tooltip:
-        "Client Id, Linked to Channel/Device/Account, can be changed after ‘New Client’ operation",
+        "Genre of the series",
     },
     {
-      key: "appInstallationId",
-      title: "AppInstallationId",
-      tooltip: "Edge Channel Unique Id",
+      key: "premierDate",
+      title: "Premier Date ",
+      tooltip: "Release date of the series",
     },
     {
-      key: "channel",
-      title: "Channel",
-      tooltip: "Edge Channel, e.x. Canary, Dev, Beta, Stable",
+      key: "about",
+      title: "About",
+      tooltip: " Series description",
     },
     {
-      key: "edgeVersion",
-      title: "EdgeVersion",
-      tooltip: "Edge Client Version",
+      key: "imdbrating",
+      title: "IMDB Rating",
+      tooltip: "IMDB Rating",
     },
-    { key: "platform", title: "Platform", tooltip: "Edge Installed Device" },
+    { key: "motionPictureRating", title: "Motion Picture Rating", tooltip: "Motion Picture Rating" },
     {
-      key: "correlationId",
-      title: "CorrelationId",
-      tooltip: "Service Log Unique Id for Operation",
-    },
-    {
-      key: "activityIds",
-      title: "ActivityIds",
-      tooltip: "A list of Entity Id",
+      key: "metascore",
+      title: "Metascore",
+      tooltip: "Metascore",
     },
     {
-      key: "operationType",
-      title: "OperationType",
-      tooltip: "Request Type from Edge Client",
+      key: "director",
+      title: "Director",
+      tooltip: "Director",
     },
     {
-      key: "timestamp",
-      title: "Timestamp",
-      tooltip: "Last Modified Time by Sync Service",
+      key: "writer",
+      title: "Writer",
+      tooltip: "Writer",
+    },
+    {
+      key: "runtime",
+      title: "Runtime",
+      tooltip: "Series Runtime",
+    },
+    {
+      key: "topCast",
+      title: "Top Cast",
+      tooltip: "Top Cast in series",
+    },
+    {
+      key: "episodes",
+      title: "Episodes",
+      tooltip: "Series Episode Count",
     },
   ];
 
